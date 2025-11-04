@@ -23,12 +23,20 @@
 
 
 # # String methods
-#name - "bob the builder"
-name = " bob the builder "
+# #name - "bob the builder"
+# name = " bob the builder "
 
-print(len(name))                     # Length of the string
-print(name.strip())                  # Remove whitespace
-print(name.upper())                  # Convert to UPPERCASE
-print(name.lower())                  # Convert to lowercase
-print(name.title())                  # Convert to Title Case
-print(name.replace("bob", "jane"))   # Replace substring
+# print(len(name))                     # Length of the string
+# print(name.strip())                  # Remove whitespace
+# print(name.upper())                  # Convert to UPPERCASE
+# print(name.lower())                  # Convert to lowercase
+# print(name.title())                  # Convert to Title Case
+# print(name.replace("bob", "jane"))   # Replace substring
+
+# String formatting
+name = "John Doe"
+age = 30
+
+message_1 = f"My name is {name} and I am {age} years old."                              #f-string
+message_2 = "My name is {name} and I am {age} years old.".format(name=name, age=age)    #str.format()
+message_3 = "My name is %s and I am %d years old." % (name, age)                        #% formatting
