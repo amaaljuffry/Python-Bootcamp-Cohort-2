@@ -4,7 +4,7 @@
 
 ````markdown
 # 🐍 Python Bootcamp Cohort 2  
-📅 **Start Date:** November 3, 2025  
+📅 Start Date: November 3, 2025  
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -25,15 +25,15 @@
 - [▶️ Example Run](#️-example-run)
 - [👩‍💻 Author](#-author)
 
----
-
+````
 ## ⚙️ 1. Create a Virtual Environment
 
 From your project directory:
 
 ```powershell
 python -m venv venv
-````
+```
+
 
 This command creates a new folder named **venv** that holds your isolated Python environment.
 
@@ -181,5 +181,4 @@ python 02_string_manipulation.py
 ---
 
 > ⭐ *If this repository helps you, consider giving it a star on GitHub!*
-
 
