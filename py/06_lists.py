@@ -58,33 +58,59 @@
 #Create a grocery list and perform various operations.
 
 # Solution 1:
-grocery_list = ["petai", "bayam", "kangkung", "bawang putih"]
-print(grocery_list) # print the original list
+# grocery_list = ["petai", "bayam", "kangkung", "bawang putih"]
+# print(grocery_list) # print the original list
 
-print(len(grocery_list)) # print the length of the list
+# print(len(grocery_list)) # print the length of the list
 
-print("petai" in grocery_list) # check if the item is in the list
+# print("petai" in grocery_list) # check if the item is in the list
 
-grocery_list.append("cili kering") # add the item to the end of the list
-print(grocery_list) # print the edited list
+# grocery_list.append("cili kering") # add the item to the end of the list
+# print(grocery_list) # print the edited list
 
-grocery_list.remove("kangkung") # remove the item from the list
-print(grocery_list) # print the edited list
+# grocery_list.remove("kangkung") # remove the item from the list
+# print(grocery_list) # print the edited list
 
-grocery_list.pop(1) # remove the item at the index 1
-print(grocery_list) # print the edited list
+# grocery_list.pop(1) # remove the item at the index 1
+# print(grocery_list) # print the edited list
 
-grocery_list.sort() # sort the list
-print(grocery_list) # print the edited list
+# grocery_list.sort() # sort the list
+# print(grocery_list) # print the edited list
 
-grocery_list.reverse() # reverse the list
-print(grocery_list) # print the edited list
+# grocery_list.reverse() # reverse the list
+# print(grocery_list) # print the edited list
 
-grocery_list.copy() # copy the list
-print(grocery_list) # print the edited list
+# grocery_list.copy() # copy the list
+# print(grocery_list) # print the edited list
 
-grocery_list.extend(["kangkung", "bawang putih"]) # extend the list
-print(grocery_list) # print the edited list
+# grocery_list.extend(["kangkung", "bawang putih"]) # extend the list
+# print(grocery_list) # print the edited list
 
-grocery_list.clear() # clear the list
-print(grocery_list) # print the edited list
+# grocery_list.clear() # clear the list
+# print(grocery_list) # print the edited list
+
+
+#Exercises 2 :
+# Write a program that finds the largest and smallest number in list.
+
+# Solution 2:
+
+# Program to find the largest and smallest number in a list
+
+numbers = [3, 7, 2, 9, 4]
+
+
+# Assume first element is both smallest and largest
+smallest = numbers[0]
+largest = numbers[0]
+
+# Loop through the list
+for num in numbers:
+    if num < smallest:
+        smallest = num
+    if num > largest:
+        largest = num
+
+# Display results
+print(f"The smallest number is {smallest}") # print the smallest number
+print(f"The largest number is {largest}") # print the largest number
