@@ -13,7 +13,7 @@
 #     print("You are a minor.")
 
 # Multiple conditionals statements
-score = 60
+# score = 60
 
 # if score >= 90:
 #     print("Grade: A")
@@ -71,20 +71,24 @@ score = 60
 # Exercise
 # 1. Write a program that categorizes BMI (Body Mass Index) into underweight(<18.5), normal weight(<24.9), overweight(<29.9), and obesity(<30.0). (formula = kg/m^2)
 
-weight = 70  # in kilograms
-height = 1.75  # in meters
+# BMI Categorizer Program
+
+# Get user input
+weight = float(input("Enter your weight in kilograms (kg): "))
+height = float(input("Enter your height in meters (m): "))
 
 # Calculate BMI
-BMI = weight / (height ** 2)
-if BMI < 18.5:
-    category = "Underweight"
-elif BMI < 24.9:
-    category = "Normal weight"
-elif BMI < 29.9:
-    category = "Overweight"
+bmi = weight / (height ** 2)
+
+# Display BMI value
+print(f"\nYour BMI is: {bmi:.2f}")
+
+# Determine BMI category
+if bmi < 18.5:
+    print("Category: Underweight")
+elif bmi < 24.9:
+    print("Category: Normal weight")
+elif bmi < 29.9:
+    print("Category: Overweight")
 else:
-    category = "Obesity"
-    
-    
-print(f"Your BMI is: {BMI:.3f}")
-print(f"Category: {category}")
+    print("Category: Obesity")
