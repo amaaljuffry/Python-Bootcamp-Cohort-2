@@ -84,3 +84,19 @@ for student_id, info in student_records.items():
     print(f"  Major: {info['major']}")
     print(f"  Grades: {info['grades']}")
     print()
+
+# Exercise 2: Add a new student "student_003"
+student_records["student_003"] = {
+    "name": "Mike",
+    "age": 18,
+    "major": "Math",
+    "grades": [82, 79, 91]
+}
+
+# Exercise 3: Update John's age to 20
+student_records["student_001"]["age"] = 20
+
+# Exercise 4: Loop through and print in the specified format
+for student_id, info in student_records.items():
+    print(f"Student ID: {student_id}, Name: {info['name']}, Major: {info['major']}")
+
